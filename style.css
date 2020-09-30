@@ -6,6 +6,11 @@ h2 {
     padding-bottom: 50px;
 }
 
+#expense-table {
+    border: solid;
+    text-align: center;
+}
+
 #table-container {
     text-align: center;
     font-size: 2rem;

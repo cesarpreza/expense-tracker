@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Expense Tracker</title>
-		<link rel="stylesheet" href="/style.css" />
-	</head>
 
-	<body>
-		<div id="title">
-			<h1>Track Your Expenses</h1>
-			<h2>Manage Your Money</h2>
-		</div>
-		<div id="expense-container">
-			<form>
-				<label>Payment Type:</label>
-				<select>
-					<option>Cash</option>
-					<option>Card</option>
-				</select>
-				<label>Amount:</label>
-				<input type="text" /><br /><br />
-				<label>Expense:</label>
-				<input type="text" />
-				<label>Date:</label>
-				<input type="date" /><br /><br />
-				<input type="submit" />
-			</form>
-			<br />
-			<br />
-		</div>
-		<div id="table-container">
-			<tr id="table-head">
-				<th>Pay Type</th>
-				<th>Amount</th>
-				<th>Expense</th>
-				<th>Date</th>
-			</tr>
-		</div>
-		<script src="app.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div id="title">
+        <h1>Track Your Expenses</h1>
+        <h2>Manage Your Money</h2>
+    </div>
+    <div id="expense-container">
+        <form>
+            <label>Payment Type:</label>
+            <select>
+                <option>Cash</option>
+                <option>Card</option>
+            </select>
+            <label>Amount:</label>
+            <input type="text" /><br /><br />
+            <label>Expense:</label>
+            <input type="text" />
+            <label>Date:</label>
+            <input type="date" /><br /><br />
+            <input type="submit" />
+        </form>
+        <br />
+        <br />
+    </div>
+    <div id="table-container">
+        <table id="expense-table">
+            <tr id="table-head">
+                <th>Pay Type</th>
+                <th>Amount</th>
+                <th>Expense</th>
+                <th>Date</th>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
 </html>
