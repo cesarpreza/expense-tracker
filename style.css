@@ -2,19 +2,21 @@ form {
     text-align: center;
 }
 
-h2 {
+h1 {
     padding-bottom: 50px;
 }
 
-#expense-table {
-    border: solid;
-    text-align: center;
+table {
+    margin: 30px auto;
+    width: 50%;
 }
 
-#table-container {
-    text-align: center;
+#table-head {
     font-size: 2rem;
+    text-align: left;
 }
+
+
 
 #title {
     text-align: center;
