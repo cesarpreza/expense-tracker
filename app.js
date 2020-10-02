@@ -9,10 +9,12 @@ function userData(e) {
   const datePurchased = document.getElementById("date").value
   const tableData = document.getElementById("table-body");
   const deleteExpense = "<button class='deleteButton'>Delete</button>";
+  //event listener breaks submit button
   deleteExpense.addEventListener('click', (e) => {
     const deleteData = e.target.parentElement;
     deleteData.remove();
   });
+  //Submit form button works removing the above event listener.
   let newRow = `
     <tr>
       <td>${payment}</td>
