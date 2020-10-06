@@ -1,5 +1,7 @@
 form {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 h1 {
