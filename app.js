@@ -14,6 +14,7 @@ function userData(e) {
   const deleteRow = document.createElement('button');
   deleteRow.setAttribute('id', 'deleteButton');
   deleteRow.textContent = 'Delete';
+  deleteRow.addEventListener('click', deleteExpenseRow);
   const tableData = document.getElementById("table-body");
   let newRow = `
     <tr>
@@ -24,12 +25,12 @@ function userData(e) {
     </tr>
 `
 
-  if (type !== 'Select Payment' || date !== '' || paid !== '' || item !== '') {
+  if (type === 'Select Payment' || date === '' || paid === '' || item === '') {
+    alert('Please enter an expense');
+  } else {
     tableData.innerHTML += newRow;
     tableData.appendChild(deleteRow);
     submitButton.addEventListener('click', resetForm());
-  } else {
-    alert('Please enter an expense');
   }
 }
 
